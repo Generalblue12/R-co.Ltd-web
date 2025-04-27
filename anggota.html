@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+    <audio src="yt1z.net - DJ ALAH BATAHUN RANTAU MENJADI LABUHAN HIDUIK DJ TARAGAK PULANG VIRAL TIK TOK TERBARU 2024 (320 KBps).mp3" autoplay loop></audio>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anggota & Data Diri</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <style>
+            body { 
+                background-image: url("screen\ 2.png")
+            }
+            header {
+                background-image: url("screen\ 2.png")
+
+            }
+          </style>
+        <img src="LOGO Kementerian Agama.png" alt="Kemenag" class="header-logo-kemenag">
+        <img src="LOGO MTS 24.png" alt="Mts" class="header-logo-mts24">
+        <h1>🪪 Anggota & Data Diri 📑</h1>
+        <p>Mengenal Lebih Dekat Tim Kami</p>
+    <nav>
+        <button onclick="location.href='index.html'">Login</button>
+        <button onclick="location.href='home.html'">Home</button>
+        <button onclick="location.href='anggota.html'">Anggota</button>
+        <button onclick="location.href='tentang.html'">Tentang Kami</button>
+        <button onclick="location.href='saran.html'">Saran</button>
+    </nav>
+</header>
+<main>
+        <div class="carousel">
+            <div class="main img">
+                <div class="main">
+                    <div class="slide red active">
+            <img src="Kelompok rasya ganteng.jpg" alt="Foto Atasan">
+            <h3><strong>Nama:</strong>Rasya Herian C.</h3>
+            <p><strong>Lahir:</strong> Di Rumah Sakit</p>
+            <p><strong>Jenis Kelamin:</strong> Laki-Laki</p>
+            <p><strong>Hobi:</strong> Nonton JKT48, Ikut Paskib</p>
+            <button onclick="nextSlide()">Next</button>
+            <button onclick="prevSlide()">Previous</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+        
+    
+        <div class="carousel">
+            <div class="main img">
+                <div class="main">
+                    <div class="Slide Blue">
+            <img src="kelompok rasya a.jpg" alt="Foto Anggota 1">
+            <h3><strong>Nama:</strong>Aurellie Gunawan</h3>
+            <p><strong>Lahir:</strong> <p> DiLepeh</p></p>
+            <p><strong>Jenis Kelamin:</strong>Perempuan</p>
+            <p><strong>Hobi:</strong> Banyak</p>
+            <button onclick="nextSlide()">Next</button>
+            <button onclick="prevSlide()">Previous</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="carousel">
+            <div class="main img">
+            <div class="main">
+            <div class="slide green">
+            <img src="kelompok rasya ak.jpg" alt="Foto Anggota 3">
+            <h3><strong>Nama:</strong>M. Akbar Adrdiansyah</h3>
+            <p><strong>Lahir:</strong>Di Kandang Kambing</p>
+            <p><strong>Jenis Kelamin:</strong> Transgender</p>
+            <p><strong>Hobi:</strong> Main FF wal ML</p>
+            <button onclick="nextSlide()">Next</button>
+            <button onclick="prevSlide()">Previous</button>
+            </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="carousel">       
+            <div class="main img">
+                <div class="main">
+                    <div class="slide yellow">
+            <img src="kelompok rasya b.jpg" alt="Foto Anggota 4">
+            <h3><strong>Nama:</strong>Brandon Diega</h3>
+            <p><strong>Lahir:</strong> Di Panci Rendang</p>
+            <p><strong>Jenis Kelamin:</strong> Laki-Laki</p>
+            <p><strong>Hobi:</strong> Always Ganteng</p>
+            <button onclick="nextSlide()">Next</button>
+            <button onclick="prevSlide()">Previous</button> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="carousel">
+            <div class="main img">
+                <div class="main">
+                    <div class="slide purple">
+            <img src="kelompok rasya s.jpg" alt="Foto Anggota 5">
+            <h3><strong>Nama:</strong>Syifa Layla B.</h3>
+            <p><strong>Lahir:</strong>Di Bintara Jaya</p>
+            <p><strong>Jenis Kelamin:</strong> Perempuan</p>
+            <p><strong>Hobi:</strong> Caramerrow</p>
+            <button onclick="nextSlide()">Next</button>
+            <button onclick="prevSlide()">Previous</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="carousel">
+            <div class="main img">
+                <div class="main"> 
+                    <div class="slide pink">
+            <img src="kelompok rasya i.jpg" alt="Foto Anggota 6">
+            <h3><strong>Nama:</strong>Iffah Azzahro</h3>
+            <p><strong>Lahir:</strong> Bontang</p>
+            <p><strong>Jenis Kelamin:</strong> Perempuan</p>
+            <p><strong>Hobi:</strong> Main game</p>
+            <button onclick="nextSlide()">Next</button>
+            <button onclick="prevSlide()">Previous</button>
+                    </div>
+                </div>
+             </div>
+        </div>
+</main>
+
+    <footer>
+        <p>&copy; 2024 Anggota & Data Diri. Semua Hak Dilindungi.</p>
+    </footer>
+    <script>
+
+        let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+  
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+      });
+    }
+  
+    function nextSlide() {
+      currentSlide = (currentSlide + 1 + slides.length) % slides.length;
+      showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      showSlide(currentSlide);
+    }
+    </script>
+</body>
+</html>

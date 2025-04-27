@@ -1,0 +1,175 @@
+/* Reset dan pengaturan dasar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #2a67e9;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+.header-logo-kemenag {
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;  
+}
+.header-logo-mts24 {
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;  
+}
+nav {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+nav button {
+    background-color: #4a32b600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
+}
+
+nav button:hover {
+    background-color: #2761b900;
+}
+
+main img{
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin: 1rem 0;
+    max-width: 400px;
+    text-align: center;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+button {
+    font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+ }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel {
+    width: 500px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    margin: 20px ;
+    position: relative;
+    
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.slide {
+    display: none;
+    padding: 20px;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    border-radius: 15px;
+}
+.active {
+    display: block;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+button {
+    margin-top: 8px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #333;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.6s ease;
+    transition-delay: 0.1s;
+}
+
+footer {
+    background-color: #1663bb;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+form input,
+form textarea {
+    width: 90%;
+    max-width: 500px;
+    margin: 0.5rem 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #1a729b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #095775;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    section {
+        padding: 1rem;
+    }
+
+    .member-card {
+        padding: 1rem;
+    }
+
+    form input,
+    form textarea {
+        width: 100%;
+    }
+}
